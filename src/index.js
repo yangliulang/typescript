@@ -1,1 +1,1 @@
-import ts from './day2/test.ts';
+import ts from './day3/test.ts';
