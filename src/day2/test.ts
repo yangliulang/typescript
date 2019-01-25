@@ -1,3 +1,8 @@
+type str = string;
+let k1: str = '10';
+
+console.log(k1);
+
 interface MeM {
   name: string;
   age: number;
