@@ -11,7 +11,8 @@ module.exports = function({ mode, MiniCssExtractPlugin, autoprefixer }) {
       use: {
         loader: 'babel-loader',
         options: {
-          presets: ['@babel/preset-env', '@babel/preset-react']
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+          plugins: ['@babel/plugin-proposal-class-properties']
         }
       }
     },
