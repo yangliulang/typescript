@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "noImplicitThis": true
   }
 }
