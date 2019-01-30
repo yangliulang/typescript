@@ -1,4 +1,4 @@
-import ts from './day7/test.ts';
+import ts from './day8/test.ts';
 // class Employee {
 //   constructor() {
 //     this._fullName = 'yangyong';
