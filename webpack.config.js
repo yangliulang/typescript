@@ -12,10 +12,16 @@ module.exports = env => {
     mode: env.mode,
     context: path.resolve(__dirname, './src'),
     entry: {
+      polyfill: '@babel/polyfill',
       index: './index.js'
     },
+    devtool: 'inline-source-map',
     module: {
-      rules: webpackRules({ mode: env.mode, MiniCssExtractPlugin, autoprefixer })
+      rules: webpackRules({
+        mode: env.mode,
+        MiniCssExtractPlugin,
+        autoprefixer
+      })
     },
     devServer: isProduction(env.mode)
       ? {}
@@ -24,8 +30,7 @@ module.exports = env => {
           port: 9999,
           hot: true,
           open: true,
-          overlay: true,
-          // host: '192.168.60.71'
+          overlay: true
         },
     plugins: webpackPlugins({
       mode: env.mode,

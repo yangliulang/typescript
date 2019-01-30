@@ -17,7 +17,7 @@ module.exports = function({
       new HtmlWebpackPlugin({
         template: './index.html',
         filename: 'index.html',
-        chunks: ['index'],
+        chunks: ['polyfill', 'index'],
         hash: true,
         minify: isProduction(mode)
           ? {

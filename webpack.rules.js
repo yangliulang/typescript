@@ -13,11 +13,8 @@ module.exports = function({ mode, MiniCssExtractPlugin, autoprefixer }) {
         options: {
           presets: ['@babel/preset-env', '@babel/preset-react'],
           plugins: [
-            '@babel/plugin-proposal-class-properties',
-            [
-              '@babel/plugin-proposal-decorators',
-              { decoratorsBeforeExport: true }
-            ]
+            ['@babel/plugin-proposal-decorators', { legacy: true }],
+            ['@babel/plugin-proposal-class-properties', { loose: true }]
           ]
         }
       }
