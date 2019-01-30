@@ -12,7 +12,13 @@ module.exports = function({ mode, MiniCssExtractPlugin, autoprefixer }) {
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-env', '@babel/preset-react'],
-          plugins: ['@babel/plugin-proposal-class-properties']
+          plugins: [
+            '@babel/plugin-proposal-class-properties',
+            [
+              '@babel/plugin-proposal-decorators',
+              { decoratorsBeforeExport: true }
+            ]
+          ]
         }
       }
     },
@@ -22,14 +28,10 @@ module.exports = function({ mode, MiniCssExtractPlugin, autoprefixer }) {
         isProduction(mode)
           ? MiniCssExtractPlugin.loader
           : { loader: 'style-loader' },
-        {
-          loader: 'css-loader'
-        },
+        { loader: 'css-loader' },
         {
           loader: 'postcss-loader',
-          options: {
-            plugins: [autoprefixer('last 100 versions')]
-          }
+          options: { plugins: [autoprefixer('last 100 versions')] }
         }
       ]
     }
