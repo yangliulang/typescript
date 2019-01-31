@@ -1,1 +1,1 @@
-import test from './day9/test.js';
+import test from './day10/test.js';
