@@ -1,5 +1,5 @@
-interface StringValidator {
-  isAcceptable(s: string): boolean;
-}
+// interface StringValidator {
+//   isAcceptable(s: string): boolean;
+// }
 
-export = StringValidator;
+// export = StringValidator;

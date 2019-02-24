@@ -1,1 +1,2 @@
-import test from './day12/test.ts';
+import test from './day13/test.ts';
+// console.log(10);

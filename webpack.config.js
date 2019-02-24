@@ -23,6 +23,8 @@ module.exports = env => {
         autoprefixer
       })
     },
+    // 此处添加配置
+
     devServer: isProduction(env.mode)
       ? {}
       : {
