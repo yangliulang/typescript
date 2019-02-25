@@ -13,7 +13,11 @@ module.exports = env => {
     context: path.resolve(__dirname, './src'),
     entry: {
       polyfill: '@babel/polyfill',
-      index: './index.js'
+      index: './index.ts'
+    },
+    resolve: {
+      // Add '.ts' and '.tsx' as a resolvable extension.
+      extensions: ['.ts', '.tsx', '.js']
     },
     devtool: 'inline-source-map',
     module: {

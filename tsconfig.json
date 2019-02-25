@@ -2,6 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "strictNullChecks": false,
-    "noImplicitThis": true
+    "noImplicitThis": true,
+    "traceResolution": true
   }
 }
