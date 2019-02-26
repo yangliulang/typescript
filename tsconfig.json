@@ -3,6 +3,7 @@
     "sourceMap": true,
     "strictNullChecks": false,
     "noImplicitThis": true,
-    "traceResolution": true
+    "traceResolution": true,
+    "jsx": "preserve"
   }
 }

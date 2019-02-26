@@ -1,2 +1,3 @@
-import v from './day14/moduleA';
-console.log('index.ts:', v);
+import test from './day14/jsx';
+// console.log(test);
+let jsx = test;
